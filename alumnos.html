@@ -13,13 +13,13 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-        
-        
+
+
         <link rel="stylesheet" href="css/main.css">
-        
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-   
+
 
         <header class="site-header">
             <div class="hero">
@@ -86,7 +86,7 @@
                     </div>
                     <div id="error"></div>
                 </div> <!--#datos_usuario-->
-                
+
                 <div id="paquetes" class="paquetes">
                   <h3>Elige el número de boletos</h3>
                   <ul class="lista-precios clearfix">
@@ -122,11 +122,11 @@
                                     <label for="pase_completo">Boletos deseados:</label>
                                     <input type="number" min="0" id="pase_completo" size="3" name="boletos[completo][cantidad]" placeholder="0">
                                     <input type="hidden" value="50" name="boletos[completo][precio]">
-                                    
+
                                 </div>
                             </div>
-                      </li> 
-                      
+                      </li>
+
                       <li>
                             <div class="tabla-precio">
                                 <h3>Pase por 2 días (viernes y sábado)</h3>
@@ -142,7 +142,7 @@
                                     <input type="hidden" value="45" name="boletos[2dias][precio]">
                                 </div>
                             </div>
-                      </li> 
+                      </li>
                   </ul>
                 </div><!--#paquetes-->
                 <div id="resumen" class="resumen">
@@ -168,18 +168,18 @@
                                         <option value="3">Plumas</option>
                                     </select>
                                 </div><!--.orden-->
-                                
+
                                 <input type="button" id="calcular" class="button" value="Calcular">
                           </div> <!--.extras-->
-                          
+
                           <div class="total">
                               <p>Resumen:</p>
                               <div id="lista-productos">
-                                
+
                               </div>
                               <p>Total:</p>
                               <div id="suma-total">
-                                
+
                               </div>
                               <input type="hidden" name="total_pedido" id="total_pedido">
                               <input type="hidden" name="total_descuento" id="total_descuento" value="total_descuento">
@@ -187,7 +187,7 @@
                           </div> <!--.total-->
                     </div><!--.caja-->
                  </div> <!--#resumen-->
-            
+
         </form>
     </section>
 <script src="js/cotizador.js"></script>
