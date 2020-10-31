@@ -38,14 +38,16 @@ function mostrarCosto(datos) {
   listaBoletos.appendChild(li2);
   listaBoletos.appendChild(li3);
 
+  // limpiar campos
   document.querySelector('#lista-productos').innerHTML = '';
+  document.querySelector('#suma-total').innerHTML = '';
 
   if(li.innerHTML=='' && li2.innerHTML=='' && li3.innerHTML=='') {
     document.querySelector('#lista-productos').innerHTML = "Ningún boleto seleccionado";
   }
   else {
     document.querySelector('#lista-productos').appendChild(listaBoletos);
-    document.querySelector('#suma-total').innerHTML = datos.total;
+    document.querySelector('#suma-total').innerHTML = `$${datos.total}`;
   }
 
 }
